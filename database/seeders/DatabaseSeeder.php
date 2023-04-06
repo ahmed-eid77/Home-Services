@@ -15,8 +15,10 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        $this->call([
-            ServiceCategorySeeder::class
-        ]);
+        // $this->call([
+        //     ServiceCategorySeeder::class
+        // ]);
+
+        \App\Models\Service::factory(20)->create();
     }
 }

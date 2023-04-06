@@ -29,11 +29,14 @@
                 <div class="col-md-12">
                     <ul class="services-lines full-services">
 
-                        @foreach ($scategories as $scategory )
+                        @foreach ($scategories as $scategory)
                             <li>
                                 <div class="item-service-line">
-                                    <i class="fa"><a href="#"><img class="icon-img"
-                                                src="{{ asset('images/categories/') }}/{{ $scategory->image }}" alt="AC"></a></i>
+                                    <i class="fa"><a
+                                            href="{{ route('home.service_by_category', ['category_slug' => $scategory->slug]) }}"><img
+                                                class="icon-img"
+                                                src="{{ asset('images/categories/') }}/{{ $scategory->image }}"
+                                                alt="AC"></a></i>
                                     <h5>{{ $scategory->name }}</h5>
                                 </div>
                             </li>
