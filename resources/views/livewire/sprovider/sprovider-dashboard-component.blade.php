@@ -1,0 +1,3 @@
+<div>
+    Sprovider dashboard
+</div>
